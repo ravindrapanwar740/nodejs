@@ -9,12 +9,12 @@ const staticpath=path.join(__dirname,'../public')
 //set hbs function....
 app.set("view engine","hbs")
 
-//app.use(express.static(staticpath))
+app.use(express.static(staticpath))
 
 //template engine route
-app.get("",(req,res)=>{
-    res.render("index")
-})
+// app.get("",(req,res)=>{
+//     res.render("index")
+// })
 //
 app.get('/',(req,res)=>{
     res.send("Express hello")
