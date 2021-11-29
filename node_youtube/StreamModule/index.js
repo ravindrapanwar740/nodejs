@@ -27,8 +27,9 @@ server.on("request",(req,res)=>
 //     res.end("page not found");
 // });
 
-//3rd Way-------
+//3rd Way-------stream pipes:->
 const rstream=fs.createReadStream("input.txt")
+//readable.pipe(destination,[,options])
 rstream.pipe(res)
 });
 server.listen(8000,"127.0.0.1")
