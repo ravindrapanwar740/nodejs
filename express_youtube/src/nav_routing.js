@@ -15,9 +15,14 @@ const app = express();
 
 //send html-----
 app.get("/", (req, res) => {
-  res.send("<h1>Home Page</h1>");
+  res.send("Home Page");
 });
 //send data as a json
+app.get("/contact",(req,res)=>{
+  res.send("Contact Page");
+})
+
+
 app.get("/about", (req, res) => {
   //     res.send([
   //         {
@@ -47,6 +52,10 @@ app.get("/about", (req, res) => {
       name: "xyz",
     },
   ]);
+
+//chngs--
+//res.send("Page not found")
+
 });
 
 app.listen(3000, () => {
