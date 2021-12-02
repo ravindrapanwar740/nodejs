@@ -11,6 +11,21 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
-  }
+    "mongoose": "^6.0.14",
+    "morgan": "~1.9.1",
+    "validator": "^13.7.0"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravindrapanwar740/nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravindrapanwar740/nodejs/issues"
+  },
+  "homepage": "https://github.com/ravindrapanwar740/nodejs#readme",
+  "description": ""
 }

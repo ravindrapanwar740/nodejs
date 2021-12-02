@@ -17,17 +17,22 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-    res.write("<h1>About</h1>");
-    res.send();
+    // res.write("<h1>About</h1>");
+    // res.send();
+res.render('about')
+
 });
 
-app.get("/json", (req, res) => {
-  res.send({
-    id: 1,
-    name: "xyz",
-  });
+app.get("*", (req, res) => {
+  res.send('404 page not found')
 });
+
+app.get("/contact", (req, res) => {
+  res.send('contact page')
+});
+
+
 
 app.listen(3030, () => {
-  console.log("server is running");
+  console.log("server is running 3030");
 });
