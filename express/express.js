@@ -12,6 +12,10 @@ app.get('/about',(req,res)=>{
 app.get('/contact',(req,res)=>{
     res.send("<h1>Contact page<h1>")
 })
+
+app.get('/con',(req,res)=>{
+    res.send("<h1>name page<h1>")
+})
 //console.log(``, )
 //
 app.listen(3002,()=>{
