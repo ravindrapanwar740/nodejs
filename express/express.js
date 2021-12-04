@@ -12,11 +12,11 @@ app.get('/about',(req,res)=>{
 app.get('/contact',(req,res)=>{
     res.send("<h1>Contact page<h1>")
 })
-
-app.get('/detail',(req,res)=>{
-    res.send("<h1>Details Page<h1>")
-})
-
+//console.log(``, )
+//
 app.listen(3002,()=>{
     console.log("server running 3002")
 })
+
+
+
