@@ -13,6 +13,10 @@ app.get('/contact',(req,res)=>{
     res.send("<h1>Contact page<h1>")
 })
 
+app.get('/detail',(req,res)=>{
+    res.send("<h1>Details Page<h1>")
+})
+
 app.listen(3002,()=>{
-    console.log("<h1>server running 3002<h1>")
+    console.log("server running 3002")
 })
